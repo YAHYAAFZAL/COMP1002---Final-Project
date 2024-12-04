@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaroid OneStep - Product</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Global Header -->
+    <header id="global-header"></header>
+
+    <main>
+        <h1>Polaroid OneStep Camera</h1>
+        <img src="images/polaroid-camera.jpg" alt="Polaroid Camera" class="product-img">
+        <p>The Polaroid OneStep is the ultimate instant camera, letting you snap memories and hold them in your hand within seconds. Its vintage design makes it a timeless piece.</p>
+        <p><strong>Price:</strong> $99.99</p>
+        <button id="buy-now-btn">Add to Cart</button>
+        <p id="cart-message" class="cart-message">Product added to cart!</p>
+
+        
+    </main>
+
+    <!-- Global Footer -->
+    <footer id="global-footer"></footer>
+
+    <script>
+        document.getElementById("buy-now-btn").addEventListener("click", () => {
+            const message = document.getElementById("cart-message");
+            message.style.display = "block";
+            setTimeout(() => {
+                message.style.display = "none";
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
